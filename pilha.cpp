@@ -7,22 +7,22 @@
 
 using namespace std;
 
-int arr[max], pop, push, topo=-1, i, opcao;
+int arr[max], topo=-1, i, opcao;
 
-void insere() {
+void push() {
     if(topo<max) { 
             cout << "\n";
             cout << "Digite o valor que deseja inserir no vetor: ";
-            cin >> push;
+            cin >> i;
             topo++;
-            arr[topo] = push;          
+            arr[topo] = i;          
     }
         else {
             cout << "A pilha está cheia, remova algum elemento para adicionar mais.\n";
         }
 }
 
-void remove() {
+void pop() {
     if (topo>-1) {
             arr[topo] = 0;
             topo--;
@@ -69,8 +69,8 @@ int main() {
         system("cls");
 
         switch (opcao) {
-            case 1: insere(); break;
-            case 2: remove(); break;
+            case 1: push(); break;
+            case 2: pop(); break;
             case 3: exibe(); break;
             case 9: return 0;
             default: cout << "\nEscolha uma opção válida."; break;
