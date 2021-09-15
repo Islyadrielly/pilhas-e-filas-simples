@@ -9,4 +9,4 @@ void acentos() {
 
   // Define codificação como sendo UTF-8
   SetConsoleOutputCP(CPAGE_UTF8);
-}
+} 
