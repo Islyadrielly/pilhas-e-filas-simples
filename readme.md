@@ -1,1 +1,1 @@
-Exercicio de matrizes que foi legal de fazer :)
+Exercícios que foram legais de fazer :)
